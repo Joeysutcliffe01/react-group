@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import { Route, Routes } from "react-router-dom";
+
+// ----------------------------Components
+import { LayoutComponent } from "./components/Layout/LayoutComponent";
+import { Home } from "./components/Home/Home";
+import { ReactFacts } from "./components/Projects/ReactFacts/ReactFacts";
+import { BusinessCard } from "./components/Projects/BusinessCard/BusinessCard";
+import { Custom404Page } from "./components/Custom404Page/Custom404Page";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route element={<LayoutComponent />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/react-facts" element={<ReactFacts />} />
+        <Route path="/business-card" element={<BusinessCard />} />
+        <Route path="*" element={<Custom404Page />} />
+      </Route>
+    </Routes>
   );
 }
 
 export default App;
+
+// ------------------------Notes
+// --Make sure to add BrowserRouter to the index.js file

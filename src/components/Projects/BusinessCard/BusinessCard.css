@@ -1,0 +1,126 @@
+.businesscard__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/business-card-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+}
+
+.businesscard__card-container {
+    width: 26rem;
+    background-color: #1A1B21;
+    border-radius: 1rem 1rem;
+    color: white;
+}
+
+/*------------------------------------------------------- Header */
+
+.businesscard__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.businesscard__header-img {
+    width: 100%;
+    height: 100%;
+}
+
+.businesscard__h5 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #F47D27;
+}
+
+.businesscard__h5,
+.businesscard__p {
+    margin-top: -1rem;
+}
+
+.businesscard__header-link-button {
+    border: none;
+    font-size: 1.3em;
+    padding: .5rem .5rem .5rem 2rem;
+    margin: 0 .5rem;
+    width: 10rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.linkedin-icon,
+.email-icon {
+    font-size: 1.2rem;
+    top: .6rem;
+    position: absolute;
+}
+
+.linkedin-icon {
+    left: 1.7rem;
+}
+
+.email-icon {
+    left: 2.3rem;
+}
+
+#email:hover {
+    background-color: #5093E2;
+    color: white;
+}
+
+#linkedin {
+    background-color: #5093E2;
+    color: white;
+}
+
+#linkedin:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/*------------------------------------------------------- Main */
+
+.businesscard__main {
+    padding: 2rem 2rem;
+}
+
+.businesscard__main-p {
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+}
+
+/*------------------------------------------------------- Footer */
+.businesscard__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161619;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.businesscard__footer-links {
+
+    text-decoration: none;
+    color: #161619;
+    background-color: gray;
+    font-size: 1.3em;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: 0 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.businesscard__footer-links:hover {
+    color: #ffffff;
+    background-color: transparent;
+    transform: scale(1.9);
+}
