@@ -1,0 +1,103 @@
+/* ----------------------------------------Header */
+.airbnb__header {
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(27, 31, 35, 0.1) 0px 10px 6px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.airbnb__logo {
+    width: 6rem;
+}
+
+/* ----------------------------------------Hero */
+.airbnb__hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+    /* border: 2px solid red; */
+}
+
+.airbnb__hero-img {
+    margin: 0 auto;
+    width: 100%;
+    /* max-width: 40rem; */
+}
+
+.hero__info-container {
+    text-align: left;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.airbnb__hero-h1 {
+    font-size: 3em;
+}
+
+.airbnb__hero-p {
+    margin-top: -2rem;
+    max-width: 25rem;
+    font-weight: 500;
+    /* border: 2px solid red; */
+}
+
+
+/* ----------------------------------------Card */
+.airbnb__card-containerard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    /* width: 100%; */
+    /* border: 2px solid red; */
+}
+
+.airbnb__main-container {
+    cursor: pointer;
+    margin: 0 2.2rem;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+.airbnb__main-container:hover {
+    transform: scale(1.1);
+
+}
+
+.airbnb__card-soldout {
+    padding: .3rem;
+    background-color: rgba(255, 255, 255, 0.751);
+    border-radius: 1rem;
+    top: -.5rem;
+    right: .5rem;
+    position: absolute;
+}
+
+.airbnb__card-img {
+    width: 14rem;
+    height: 20rem;
+    /* border: 2px solid red; */
+
+}
+
+.airbnb__card-bold {
+    font-weight: bold;
+}
+
+.airbnb__card-star {
+    padding-top: .3rem;
+    width: 1.2rem;
+}
+
+.airbnb__card-gray {
+    margin: 0 auto;
+    padding: 0 .1rem;
+    color: rgb(179, 179, 179);
+}
+
+/* @media only screen and (max-width: 600px) {
+   
+} */
