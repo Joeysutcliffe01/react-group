@@ -16,7 +16,10 @@ export function LayoutComponent() {
           Card
         </NavLink>
         <NavLink className="layout__nav-links" to="/airbnb">
-          airbnb
+          Airbnb
+        </NavLink>
+        <NavLink className="layout__nav-links" to="/travel">
+          Travel
         </NavLink>
       </nav>
       <main className="outlet">
