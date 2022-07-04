@@ -1,6 +1,6 @@
-import FactsBg from "../img/reactjs-bg.png";
+import FactsBg from "../img/react__facts-bg.png";
 
-export function ReactFactsMain() {
+export function ReactFactsMain({ darkMode }) {
   return (
     <>
       <main className="react__facts-main">
@@ -18,7 +18,11 @@ export function ReactFactsMain() {
             Powers thousands of enterprise apps, including mobile apps
           </li>
         </ul>
-        <img className="react__facts-bg" src={FactsBg} alt="Facts background" />
+        <img
+          className={darkMode ? "react__facts-bg" : "react__facts-bg light"}
+          src={FactsBg}
+          alt="Facts background"
+        />
       </main>
     </>
   );

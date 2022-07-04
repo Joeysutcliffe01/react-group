@@ -25,7 +25,7 @@ export function Airbnb() {
   return (
     <>
       <div className="airbnb__container">
-        <div className="airbnb__container">
+        <div className="airbnb__container-inner">
           <AirbnbHeader />
           <AirbnbHero />
           <section className="airbnb__card-containerard">{airbnbData}</section>

@@ -8,6 +8,7 @@ import { ReactFacts } from "./components/Projects/ReactFacts/ReactFacts";
 import { BusinessCard } from "./components/Projects/BusinessCard/BusinessCard";
 import { Airbnb } from "./components/Projects/airbnb/Airbnb";
 import { Travel } from "./components/Projects/Travel/Travel";
+import { MemeGenerator } from "./components/Projects/MemeGenerator/MemeGenerator";
 import { Custom404Page } from "./components/Custom404Page/Custom404Page";
 
 import "./App.css";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/business-card" element={<BusinessCard />} />
         <Route path="/airbnb" element={<Airbnb />} />
         <Route path="/travel" element={<Travel />} />
+        <Route path="/meme-generator" element={<MemeGenerator />} />
         <Route path="*" element={<Custom404Page />} />
       </Route>
     </Routes>

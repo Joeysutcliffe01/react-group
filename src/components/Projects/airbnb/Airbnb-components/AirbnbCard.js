@@ -17,7 +17,7 @@ export function AirbnbCard({
     badge = "Online";
   }
   //   console.log("props", props);
-  console.log("openSpots", openSpots);
+  // console.log("openSpots", openSpots);
   return (
     <main className="airbnb__main-container">
       <div className="airbnb-card">
@@ -26,7 +26,7 @@ export function AirbnbCard({
 
         {badge && <h4 className="airbnb__card-soldout"> {badge}</h4>}
         <img className="airbnb__card-img" src={`../img/${img}`} alt={title} />
-        {console.log(img)}
+        {/* {console.log(img)} */}
         <div className="airbnb__card-stats">
           <img
             className="airbnb__card-star"

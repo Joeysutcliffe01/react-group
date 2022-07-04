@@ -21,6 +21,9 @@ export function LayoutComponent() {
         <NavLink className="layout__nav-links" to="/travel">
           Travel
         </NavLink>
+        <NavLink className="layout__nav-links" to="/meme-generator">
+          Memes
+        </NavLink>
       </nav>
       <main className="outlet">
         <Outlet />

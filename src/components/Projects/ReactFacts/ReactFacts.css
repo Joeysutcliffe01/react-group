@@ -2,24 +2,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(img/react-facts-body-bg.png);
     background-size: cover;
+    padding: 0 1rem;
+
     /* border: 2px solid red; */
 }
 
-.react__facts-card-container {
+.react__facts-card-container-dark {
     background-color: #21222A;
     color: white;
+    height: min-content;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    /* border: 2px solid red; */
+}
+
+.react__facts-card-container-light {
+    background-color: #ffffff;
+    color: rgb(36, 35, 35);
+    height: min-content;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    /* border: 2px solid red; */
 }
 
 /* --------------------------------------------------------------------Header */
-.react__facts-header {
+
+.opacity {
+    opacity: .6;
+}
+
+.react__facts-header-dark {
     display: flex;
     align-items: center;
     padding: 1.1rem 1.4rem;
+    color: white;
+    border-radius: .5rem .5rem 0 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 25px 20px -1px;
     background-color: #282D35;
+    transition: all .3s ease-in-out;
+}
+
+.react__facts-header-light {
+    display: flex;
+    align-items: center;
+    padding: 1.1rem 1.4rem;
+    border-radius: .5rem .5rem 0 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 20px -1px;
+    background-color: #ffffff;
+    transition: all .3s ease-in-out;
 }
 
 .react__facts-logo {
@@ -37,11 +71,64 @@
     font-size: 1.3em;
 }
 
+.react__facts-toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.react__facts-toggler-slider {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1.7rem;
+    height: .8rem;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: content-box;
+}
+
+.react__facts-toggler-slider-light {
+    width: 1.7rem;
+    height: .8rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: content-box;
+
+}
+
+.react__facts-toggler-slider-circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.react__facts-toggler-slider-circle-light {
+    height: 13px;
+    width: 13px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
 /* --------------------------------------------------------------------Main */
 
 .react__facts-main {
     height: 30rem;
     padding: 2rem;
+    overflow: hidden;
     position: relative;
 }
 
@@ -55,6 +142,7 @@
     padding: .6rem;
 }
 
+/* -------Old Way to do bulletpoints */
 /* .react__facts-li::before {
     content: "\2022";
     color: #61DAFB;
@@ -76,8 +164,30 @@
 
 .react__facts-bg {
     opacity: 0.15;
-    width: 11rem;
-    top: 5rem;
-    right: 0;
+    width: 20rem;
+    top: 6rem;
+    right: -10rem;
     position: absolute;
+}
+
+.light {
+    opacity: 1;
+    /* border: 2px solid red; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    .react__facts-bg {
+        animation: react__facts-bg-spin infinite 70s linear;
+    }
+}
+
+@keyframes react__facts-bg-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

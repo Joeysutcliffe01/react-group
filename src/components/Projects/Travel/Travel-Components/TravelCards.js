@@ -1,7 +1,7 @@
 import Data from "../Data";
 import TravelPin from "../img/travel-pin.svg";
 
-console.log(Data);
+// console.log(Data);
 
 export function TravelCards(props) {
   return (

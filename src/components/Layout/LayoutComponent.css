@@ -19,10 +19,10 @@
 }
 
 .layout__nav-logo img {
-    width: 4rem;
+    width: 3rem;
     position: absolute;
     left: 2rem;
-    top: .3rem;
+    top: 1rem;
     transition: all .3s ease-in;
 
 }
