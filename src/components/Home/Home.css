@@ -1,0 +1,35 @@
+.main__home {
+    min-height: 100vh;
+    background-image: url(./img/home__page-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 9rem;
+    /* border: 2px solid red; */
+
+}
+
+.sidebar__home {
+    width: 20rem;
+    min-height: 80vh;
+    margin-left: 1rem;
+    padding: 2rem;
+    background-image: linear-gradient(to bottom right, rgba(249, 249, 249, 0.7), rgba(249, 249, 249, 0.3));
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+}
+
+.sidebar__items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-left: 3rem; */
+}
+
+.sidebar__item-img {
+    width: 2rem;
+    padding-right: 1rem;
+}
+
+.sidebar__nav-links-container {
+    border: 2px solid red;
+}

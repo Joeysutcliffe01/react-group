@@ -12,20 +12,24 @@ import { MemeGenerator } from "./components/Projects/MemeGenerator/MemeGenerator
 import { Custom404Page } from "./components/Custom404Page/Custom404Page";
 
 import "./App.css";
+import { Tenzies } from "./components/Projects/Tenzies/Tenzies";
 
 function App() {
   return (
-    <Routes>
-      <Route element={<LayoutComponent />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/react-facts" element={<ReactFacts />} />
-        <Route path="/business-card" element={<BusinessCard />} />
-        <Route path="/airbnb" element={<Airbnb />} />
-        <Route path="/travel" element={<Travel />} />
-        <Route path="/meme-generator" element={<MemeGenerator />} />
-        <Route path="*" element={<Custom404Page />} />
-      </Route>
-    </Routes>
+    <section className="main__container">
+      <Routes>
+        <Route element={<LayoutComponent />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/react-facts" element={<ReactFacts />} />
+          <Route path="/business-card" element={<BusinessCard />} />
+          <Route path="/airbnb" element={<Airbnb />} />
+          <Route path="/travel" element={<Travel />} />
+          <Route path="/meme-generator" element={<MemeGenerator />} />
+          <Route path="/tenzies" element={<Tenzies />} />
+          <Route path="*" element={<Custom404Page />} />
+        </Route>
+      </Routes>
+    </section>
   );
 }
 

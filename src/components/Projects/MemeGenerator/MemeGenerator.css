@@ -10,16 +10,20 @@
 }
 
 .MemeGenerator__container {
-    height: 100%;
+    min-height: 100vh;
+    padding-top: 5rem;
+    background-image: url(./img/meme-bg.png);
+    background-size: cover;
     /* border: 2px solid red; */
 }
 
 .MemeGenerator__card {
     width: 90%;
     margin: 2rem .2rem;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 1rem;
+    background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
 }
 

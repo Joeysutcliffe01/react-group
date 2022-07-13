@@ -8,6 +8,7 @@
 
 .travel__card-container {
     width: 90vw;
+    margin: 7rem 0;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 0 0 1rem 1rem;
 }

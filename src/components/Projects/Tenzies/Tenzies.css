@@ -1,0 +1,126 @@
+.Tenzies__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, rgb(7, 201, 255), rgb(34, 9, 104));
+    /* border: 2px solid red; */
+}
+
+.Tenzies__card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tenzies__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 80%;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    background: white;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.1));
+    border-radius: .5rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.Tenzies__p {
+    width: 60%;
+    text-align: center;
+}
+
+.Tenzies__p-tenzies {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.Tenzies__btn {
+    background-color: rgb(0, 159, 245);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: .2rem;
+    margin: 1rem 0;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    /* transition: all .4s ease-in-out; */
+}
+
+.Tenzies__btn:hover {
+    opacity: .7;
+}
+
+.Tenzies__btn:active {
+    color: rgb(0, 255, 68);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/*-------------------------- Dice container */
+.Tenzies__numbers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 30rem; */
+    /* border: 2px solid rgb(230, 0, 255); */
+}
+
+.Tenzies__numbers-body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 30rem;
+    margin: 1rem;
+    /* border: 2px solid rgb(255, 0, 72); */
+}
+
+
+
+
+.tenzies__dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1rem;
+    background-color: white;
+    padding: 1rem;
+    width: 5%;
+    height: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+
+.isHeld {
+    background-image: linear-gradient(rgb(0, 255, 0), rgb(0, 193, 0), rgb(0, 183, 24));
+    color: white;
+}
+
+.tenzies__dice-num {
+    transition: all .25s ease-in-out;
+
+}
+
+.tenzies__dice:hover .tenzies__dice-num {
+    transform: scale(1.5);
+
+    /* color: rgb(0, 255, 68); */
+}
+
+
+
+
+
+/*-------------------------- Dice container */

@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "./LayoutComponent.css";
-import Logo from "../../images/react-logo.png";
+import Logo from "../../images/react-logo-2.png";
 
 export function LayoutComponent() {
   return (
@@ -23,6 +23,9 @@ export function LayoutComponent() {
         </NavLink>
         <NavLink className="layout__nav-links" to="/meme-generator">
           Memes
+        </NavLink>
+        <NavLink className="layout__nav-links" to="/tenzies">
+          Tenzies
         </NavLink>
       </nav>
       <main className="outlet">
