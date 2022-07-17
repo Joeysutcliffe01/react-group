@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ReactFactsHeader } from "./ReactFactsComponents/ReactFactsHeader";
 import { ReactFactsMain } from "./ReactFactsComponents/ReactFactsMain";
+import { GlobalSidebar } from "../../GlobalComponents/GlobalSidebar";
 import "./ReactFacts.css";
 
 export function ReactFacts() {
@@ -12,6 +13,7 @@ export function ReactFacts() {
   return (
     <>
       <div className="react__facts-container">
+        <GlobalSidebar />
         <div
           className={
             darkMode

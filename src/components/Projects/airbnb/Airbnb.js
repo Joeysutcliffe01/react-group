@@ -3,6 +3,7 @@ import { AirbnbHeader } from "./Airbnb-components/AirbnbHeader";
 import { AirbnbHero } from "./Airbnb-components/AirbnbHero";
 import { AirbnbCard } from "./Airbnb-components/AirbnbCard";
 import Data from "./Data";
+import { GlobalSidebar } from "../../GlobalComponents/GlobalSidebar";
 
 // console.log(Data);
 
@@ -25,6 +26,7 @@ export function Airbnb() {
   return (
     <>
       <div className="airbnb__container">
+        <GlobalSidebar />
         <div className="airbnb__container-inner">
           <AirbnbHeader />
           <AirbnbHero />

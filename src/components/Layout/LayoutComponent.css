@@ -1,21 +1,6 @@
-.outlet {
+/* .outlet {
     min-height: 100vh;
-}
-
-.layout-footer {
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(to bottom right, rgba(249, 249, 249, 0.7), rgba(249, 249, 249, 0.3));
-    /* background-image: linear-gradient(rgba(0, 0, 255, .7)); */
-    padding: 1.3rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.406);
-    /* position: fixed; */
-    width: 96%;
-    bottom: -12rem;
-    position: absolute;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
     .layout__nav-logo img {
@@ -27,7 +12,7 @@
     } */
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
     }
@@ -35,4 +20,4 @@
     to {
         transform: rotate(360deg);
     }
-}
+} */

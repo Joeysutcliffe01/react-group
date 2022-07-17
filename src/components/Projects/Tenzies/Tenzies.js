@@ -2,6 +2,8 @@ import { nanoid } from "nanoid";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import Confetti from "react-confetti";
+import { GlobalSidebar } from "../../GlobalComponents/GlobalSidebar";
+import { Sidebar } from "../../Home/HomeComponents/Sidebar";
 // import useWindowSize from "react-use/lib/useWindowSize";
 
 import "./Tenzies.css";
@@ -73,6 +75,7 @@ export function Tenzies() {
 
   return (
     <div className="Tenzies__container">
+      <GlobalSidebar />
       {tenzies && (
         <Confetti
         // width={width} height={height}

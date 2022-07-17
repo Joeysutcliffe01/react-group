@@ -1,6 +1,7 @@
 .airbnb__container {
     padding: 7rem 2rem;
     background-image: url(./img/airbnb-bg.png);
+    /* background-image: url(./img/airbnb-bg-2.jpg); */
     background-size: cover;
     /* border: 2px solid red; */
 }
